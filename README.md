@@ -1,4 +1,4 @@
-# Project - Demo application 
-# of course Development website with HTML, CSS & JavaScript
+# Project - Development website with HTML, CSS & JavaScript 
+# Demo application
 
 
