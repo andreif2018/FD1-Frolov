@@ -1,0 +1,114 @@
+
+/*на главноей странице Slider start*/
+div.Slider div {
+    display: flex;
+    justify-content: center;
+    flex-basis: auto
+}
+input#sliderButton1, input#sliderButton2 {
+    border-color: black;
+    color: black;
+    height: 2em;
+    align-self: center;
+    outline-width: 0;
+    opacity: 35%;
+    border-radius: 10px;
+    font-size: x-large
+}
+input#sliderButton1 { margin-right: -45px }
+
+input#sliderButton2 { margin-left: -45px }
+/* end */
+
+/*на главноей странице Block class start*/
+div.Block {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumnDesktop);
+    grid-template-rows: var(--gridTemplateRowDesktop)
+}
+div.Block div { padding: 25px }
+div#c1 {grid-column: var(--gridColumnCell_1); grid-row: var(--gridRowCell_1) }
+div#c2 {grid-column: var(--gridColumnCell_2); grid-row: var(--gridRowCell_2) }
+div#c3 {grid-column: var(--gridColumnCell_3); grid-row: var(--gridRowCell_3) }
+div#c4 {grid-column: var(--gridColumnCell_4); grid-row: var(--gridRowCell_4) }
+div#c5 {grid-column: var(--gridColumnCell_5); grid-row: var(--gridRowCell_5) }
+div#c6 {grid-column: var(--gridColumnCell_6); grid-row: var(--gridRowCell_6) }
+div#c7 {grid-column: var(--gridColumnCell_7); grid-row: var(--gridRowCell_7) }
+div#c8 {grid-column: var(--gridColumnCell_8); grid-row: var(--gridRowCell_8) }
+div#c9 {grid-column: var(--gridColumnCell_9); grid-row: var(--gridRowCell_9) }
+
+.Block h3:first-letter {
+    font-size: 1.5em;
+    font-family: 'Marcellus SC', serif;
+    text-shadow: lightyellow 1px 0 10px;
+}
+span {
+    font: bold 15px Impact, Arial;
+    line-height: 12mm;
+    text-shadow: #FC0 1px 1px 30px;
+    white-space: nowrap;
+}
+/*на главноей странице Block class end*/
+
+@media only screen and (min-width: 960px) {
+
+    div.Slider img#pict2 {
+        width: 50%;
+        padding-top: 12px;
+        border-radius: 17px
+    }
+    :root {
+        --gridTemplateColumnDesktop: 1fr 3fr 3fr 3fr 1fr;
+        --gridTemplateRowDesktop: 300px 300px 300px;
+        --gridColumnCell_1: 2; --gridRowCell_1: 1; /*cell with div id="c1"*/
+        --gridColumnCell_2: 3; --gridRowCell_2: 1; /*cell with div id="c2"*/
+        --gridColumnCell_3: 4; --gridRowCell_3: 1; /*cell with div id="c3"*/
+        --gridColumnCell_4: 2; --gridRowCell_4: 2; /*cell with div id="c4"*/
+        --gridColumnCell_5: 3; --gridRowCell_5: 2; /*cell with div id="c5"*/
+        --gridColumnCell_6: 4; --gridRowCell_6: 2; /*cell with div id="c6"*/
+        --gridColumnCell_7: 2; --gridRowCell_7: 3; /*cell with div id="c7"*/
+        --gridColumnCell_8: 3; --gridRowCell_8: 3; /*cell with div id="c8"*/
+        --gridColumnCell_9: 4; --gridRowCell_9: 3; /*cell with div id="c9"*/
+    }
+}
+@media only screen and (max-width: 960px) {
+
+    div.Slider img#pict2 {
+        width: 60%;
+        padding-top: 5px;
+        margin-top: 15px;
+        border-radius: 15px
+    }
+    :root {
+        --gridTemplateColumnDesktop: 1fr 3fr 3fr 1fr; --gridTemplateRowDesktop: 300px repeat 4;
+        --gridColumnCell_1: 2; --gridRowCell_1: 1; /*cell with div id="c1"*/
+        --gridColumnCell_2: 3; --gridRowCell_2: 1; /*cell with div id="c2"*/
+        --gridColumnCell_3: 2; --gridRowCell_3: 2; /*cell with div id="c3"*/
+        --gridColumnCell_4: 3; --gridRowCell_4: 2; /*cell with div id="c4"*/
+        --gridColumnCell_5: 2; --gridRowCell_5: 3; /*cell with div id="c5"*/
+        --gridColumnCell_6: 3; --gridRowCell_6: 3; /*cell with div id="c6"*/
+        --gridColumnCell_7: 2; --gridRowCell_7: 4; /*cell with div id="c7"*/
+        --gridColumnCell_8: 3; --gridRowCell_8: 4; /*cell with div id="c8"*/
+        --gridColumnCell_9: 2 / 4; --gridRowCell_9: 5; /*cell with div id="c9"*/
+    }
+}
+@media only screen and (max-width: 700px) {
+
+    div.Slider img#pict2 {
+        width: 97%;
+        padding-bottom: 7px;
+        border-radius: 20px
+    }
+    :root {
+        --gridTemplateColumnDesktop: 1fr 4fr 1fr; --gridTemplateRowDesktop: auto repeat 7;
+        --gridColumnCell_1: 2; --gridRowCell_1: 1; /*cell with div id="c1"*/
+        --gridColumnCell_2: 2; --gridRowCell_2: 2; /*cell with div id="c2"*/
+        --gridColumnCell_3: 2; --gridRowCell_3: 3; /*cell with div id="c3"*/
+        --gridColumnCell_4: 2; --gridRowCell_4: 4; /*cell with div id="c4"*/
+        --gridColumnCell_5: 2; --gridRowCell_5: 5; /*cell with div id="c5"*/
+        --gridColumnCell_6: 2; --gridRowCell_6: 6; /*cell with div id="c6"*/
+        --gridColumnCell_7: 2; --gridRowCell_7: 7; /*cell with div id="c7"*/
+        --gridColumnCell_8: 2; --gridRowCell_8: 8; /*cell with div id="c8"*/
+        --gridColumnCell_9: 2; --gridRowCell_9: 9; /*cell with div id="c9"*/
+    }
+}

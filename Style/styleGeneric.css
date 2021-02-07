@@ -1,0 +1,91 @@
+body {
+    overflow-x: hidden;
+    background-color: darkgray;
+    margin: 0
+}
+/* на каждой странице изображены Logo, header и footer*/
+.Logo {
+    color: darkslategray;
+    text-align: center;
+    margin: 0
+}
+div.Header a, div.Footer a, div.Burger table {
+    color: lightyellow;
+    text-decoration: dimgray;
+    text-shadow: saddlebrown 1px 0 7px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+.Header ul {
+    list-style-type: none;
+    background-color: #CDAA6E;
+    text-align: center;
+    margin: 0;
+}
+div.Burger {
+    background-color: #CDAA6E;
+    margin: 0
+}
+.Burger img { padding-left: 10px }
+
+div.Footer {
+    padding: 0 0 10px 0;
+    background-color: #CDAA6E;
+    text-align: center;
+}
+li { display: inline-flex; }
+li.Active a {
+    border-bottom: 5px solid #A76829;
+    text-shadow: #4A3016 1px 0 12px;
+}
+
+@media only screen and (min-width: 960px) {
+    div.Burger { display: none }
+
+    li { display: inline-flex; }
+
+    .Header a, .Footer a { font: normal 20px Arial, serif; }
+
+    .Header a { text-transform: uppercase; }
+
+    .Header a, .Footer a {
+        margin: 0 30px 5px 30px;
+        padding: 20px 0 10px 0;
+    }
+}
+@media only screen and (max-width: 960px) {
+
+    div.Burger { display: none }
+
+    .Header a, .Footer a {
+        font: normal 17px Arial, serif;
+        margin: 0 15px 0 15px;
+        padding: 10px 0 3px 0;}
+}
+@media only screen and (max-width: 700px) {
+    div.Header {display: none}
+    div.Burger { display: block }
+    div.Burger table, .Footer a {
+        font: normal 17px Arial, serif;
+        margin: 0 15px 0 15px;
+        padding: 10px 0 10px 0;
+        text-decoration: dimgray;
+    }
+    .Burger a {
+        color: lightyellow;
+        text-decoration: none;
+    }
+    .Burger table td { padding: 10px }
+}
+@keyframes AnimationLogo
+{
+    from {
+        width: initial;
+        transform: scale(0.5);
+    }
+    to {
+        transform: skewX(-45deg) rotate(75deg) scale(1.2);
+        transition: transform 2s;
+    }
+}
+div.Logo img:hover { animation: AnimationLogo 2s steps(5) infinite }

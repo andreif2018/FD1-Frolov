@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no,
+maximum-scale=1.0">
+    <title>Статьи</title>
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABZ0lEQVRYR+2XvUoDQRSFvzRa29gJIlr4X2ilva3YWFupD2GZlzBN+jSpbCwsBLVR/AEVVPQBfAIr5YRZGJaJztydFZQNLNliNue759zcmW3xO58RYBFYA9bd94SkWzXpTznBVU90NKSVA2DMiS15VS7EFmYBkJWFmO5V5XisYHmdBeDTKpYrggbgzzpwAZx416CQuprw1gmdAdfAa6ABswE8AZfAjXe9R/xTKgPse4IfEYLlJZUBLPH5EA1A48D/dkAnn01gFlhxrX8FPAJHwClQiwNzQBvY+mEuHAMbVUdxeQ5IvAfMpwwlyzApdsPys11gJ0U85EB0doGN7A2YtAIkZxcAeAamEwFeZKMpuwDAIbCbCNARgCm7AEBqIffAtgBM2Q05zMRG2QcOgAcBmLIDZr6xW82sWaD3h2W3TqekO0Di58WzAjBlB+wl5h1cbmnCQXayLxeAfic5uxziwwZRVHa5AL4AocFdqLtUBu0AAAAASUVORK5CYII=" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="Style/styleGeneric.css" type="text/css">
+<link rel="stylesheet" href="Style/styleArticles.css" type="text/css">
+<body>
+<div class="Super">
+    <div class="Logo"><img src="Images/logo.png" alt="picture" title="logo picture"></div>
+    <div class="Header">
+        <ul>
+            <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+            <li class="Active"><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+            <li><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+            <li><a href="About.html" title="переход на страницу О сайте">О сайте</a></li>
+            <li><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+        </ul>
+    </div>
+    <script src="JS/scriptBurger.js"></script>
+    <div class="Burger" id="burgerId">
+        <a onclick="down()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAARUlEQVRYR+3U0QkAIAgFQN1/6IL6aQIVOhd4cujLaJ5szg8LEHgFVvFBnmwLEBglUPwEN25UEekBAgT0gBsgQEAP/CmwAdmEEiEL49BKAAAAAElFTkSuQmCC" alt="Открытие меню" title="Открытие меню"></a>
+        <table id="dropdown" style="display: none">
+            <tr><td><a href="index.html" title="переход на Гавную страницу">Главная</a></td></tr>
+            <tr><td><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></td></tr>
+            <tr><td><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></td></tr>
+            <tr><td><a href="About.html" title="переход на страницу О сайте">О сайте</a></td></tr>
+            <tr><td><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></td></tr>
+        </table>
+    </div>
+    <div class="Articles">
+        <script src="JS/scriptArticles.js"></script>
+        <div id="art1">
+            <h3>Произведения Моцарта помогают учиться и творить</h3>
+            <p>О физиологическом влиянии музыки австрийского композитора спорят не один десяток лет.
+                Многие исследователи заявляют о положительном воздействии композиций Моцарта
+                не только на умственную деятельность, но и на здоровье.<br>
+                Термин «эффект Моцарта» был введён в 1991 году отоларингологом Альфредом Томатисом,
+                который использовал произведения композитора в своей работе.</p>
+            <p id="par1" style="display: none">
+                В&nbsp;1993 году Фрэнсис Роше, Гордон Шоу и Кэтрин Ки
+                исследовали влияние прослушивания одной из сонат Моцарта на умственную деятельность.
+                Они дали испытуемым один и тот же тест на пространственное мышление,
+                разница заключалась только в музыке, сопровождающей прохождение задания.<br>
+                Выяснилось, что&nbsp;лучшие результаты испытуемые демонстрировали при прослушивании Моцарта.
+                Такого эффекта не наблюдалось при тишине или устных расслабляющих инструкциях.
+                К сожалению, подобное воздействие не долговременное:
+                эффект наблюдался только в&nbsp;течение 15 минут после прослушивания.<br>
+                В скором времени эффект Моцарта стал зарегистрированным товарным знаком,
+                а в рамках его популяризации было выдвинуто немало смелых тезисов,
+                к&nbsp;которым мы советуем отнестись скептически.<br>
+                Но если физиологическое воздействие остаётся предметом споров учёных,
+                то благотворное влияние музыки австрийского композитора на настроение и концентрацию &mdash; факт,
+                который каждый может проверить на себе.</p>
+            <a id="detail1" href="#art1" onclick='details("par1", "detail1")'>подробнее</a>
+        </div>
+        <div id="art2">
+            <h3>Произведения Вивальди стимулируют работу мозга</h3>
+            <p>Антонио Вивальди &mdash; один из ярчайших представителей композиторов эпохи барокко.
+                Это время ознаменовалось новым направлением в&nbsp;классической музыке, преобладавшим в 1600–1750 годах.
+                <br>Музыка барокко отличается размеренным темпом композиций (около 60 ударов в минуту)
+                и наличием высокочастотных гармонических обертонов &mdash; дополнительных нот,
+                подкрепляющих мелодию и привносящих в музыку оттенок экстравагантности и эмоциональной наполненности.
+            </p>
+            <p id="par2" style="display: none">
+                Проверить влияние барочной музыки на настроение может каждый:
+                неспешный ритм приводит к успокоению, но при этом не парализует умственные процессы.
+                Наличие данного эффекта подтвердили и учёные.<br>
+                Например, в 2007 году команда исследователей из Стэнфорда,
+                в которую входили сотрудники Школы медицины и музыкального факультета,
+                провела эксперимент, в ходе которого проверялись способности испытуемых к концентрации,
+                запоминанию и составлению прогнозов. Исследователи изучали с помощью томографа
+                работу мозга при прослушивании музыки барокко.<br>
+                Выяснилось, что пиковая активность мозга фиксируется в краткие моменты тишины между музыкальными частями.
+                Это связано с тем, что&nbsp;музыка барокко обладает определённой долей непредсказуемости:
+                мы строим прогнозы и анализируем будущие мелодические сочетания в следующем музыкальном фрагменте.<br>
+                Подобный эффект возникает при прослушивании не только Вивальди,
+                но и Баха, Генделя, Альбинони. Вслушиваясь в барочные произведения,
+                мы тренируем мозг, заряжаем его на активную работу.<br>Стоит отметить,
+                что такого рода музыкальная терапия должна не сопровождать умственную деятельность,
+                а предшествовать ей. Тем, кто&nbsp;не&nbsp;знает, с чего начать, поможет наша подборка.
+            </p>
+            <a id="detail2" href="#art2" onclick='details("par2", "detail2")'>подробнее</a>
+        </div>
+        <div id="art3">
+            <h3>Топ-5 самых необычных музыкальных инструментов</h3>
+            <p>Музыкальный мир не ограничивается одними гитарами и фортепьяно.
+                За длительную историю существования музыки люди постоянно пытались изобрести что-то новое.
+                Иногда у них получались действительно интересные и небанальные экземпляры.</p>
+            <p id="par3" style="display: none">Терменвокс<br>
+                Многие слышали этот музыкальный инструмент, сами того не подозревая, например, в старых фильмах ужасов.
+                Терменвокс был изобретен русским ученым Львом Терменом в 1928 году.
+                Он издает довольно необычный, даже немного жуткий вибрирующий звук,
+                который обожают многие андерграунд-музыканты.
+                Однако именно звучание инструмента не позволило ему приобрести широкую популярность.
+                Игра на терменвоксе заключается в изменении музыкантом расстояния от своих рук до антенн инструмента,
+                за счет чего и меняется высота звука.
+                <br><br>
+                Банджолеле<br>
+                Несмотря на то что и банджо, и укулеле быстро обрели армию многочисленных поклонников,
+                гибрид этих двух инструментов, банджолеле, популярным так никогда и не стал.
+                По сути дела это очень маленькое банджо, только с четырьмя струнами вместо пяти.
+                Инструмент издает приятный успокаивающий звук,
+                но вот играть на нем людям с большими руками довольно проблематично.
+                Может, именно поэтому, а может, из-за неблагозвучности своего названия банджолеле
+                так и остался нишевым инструментом.
+                <br><br>
+                Омникорд<br>
+                Омникорд — электронный музыкальный инструмент, представленный компанией Suzuki в 1981 году.
+                Звуки в нем создаются путем нажатия на соответствующую аккорду кнопку
+                и удара по специальной металлической пластине. Будучи невероятно простым в использовании,
+                омникорд имел все шансы стать популярным, особенно среди музыкантов-новичков.
+                Но так и не стал.
+                Знаменитая мелодия из песни Clint Eastwood британской группы Gorillaz является,
+                пожалуй, самым известным произведением, сыгранным на этом музыкальном инструменте.
+                <br><br>
+                Баритон-гитара<br>
+                И бас-гитара, и обычная гитара — одни из самых популярных инструментов в мире.
+                Однако, как и в случае с банджолеле, их гибрид, несмотря на глубокое и богатое звучание,
+                особой распространенности не сыскал.
+                Благодаря своей конструкции такие гитары звучат гораздо ниже обычных.
+                В настоящее время их иногда используют в студиях звукозаписи,
+                чтобы придать основной гитарной партии более насыщенный оттенок.
+                <br><br>
+                Глюкофон<br>
+                Несмотря на неблагозвучность своего названия,
+                звуки этот инструмент издает очень даже приятные.
+                Больше всего он похож на металлический ручной барабан.
+                Он состоит из двух чаш, на одной из которых расположены «язычки» барабана,
+                а на другой — резонирующее отверстие. Каждая чаша поддается тонкой настройке.
+                Инструмент сыскал некоторую популярность среди уличных музыкантов,
+                однако массовым его все-таки назвать нельзя.
+            </p>
+            <a id="detail3" href="#art3" onclick='details("par3", "detail3")'>подробнее</a>
+        </div>
+        <div id="art4">
+            <h3>Носитель имеет значение: продажи виниловых пластинок бьют рекорды</h3>
+            <p>В век, который уже настолько давно называют веком цифровых технологий»,
+                что это уже стало почти неприличным термином, многие вещи стали очень доступны.
+                Не нужно больше давиться в очереди или ставить будильник на определенное время,
+                чтобы посмотреть интересный фильм. Книги можно не ставить на полку,
+                а&nbsp;сохранять в тоненькой &laquo;читалке&raquo;.
+            </p>
+            <p id="par4" style="display: none">И музыка тоже доступна &mdash; практически вся,
+                в оцифрованном виде, без скопища дисков, кассет или, тем паче, черных больших странных кругов,
+                на которых всего-то можно записать несколько песен!
+                Вот только почему-то все больше и больше ценителей музыки предпочитает эти странные круги – они же виниловые пластинки – современным цифровым звукам. А хрипы и скрипы, разносящиеся при прослушивании этих раритетов по квартире, приводят их чуть ли не в больший экстаз, чем сама музыка.
+                Как же так?<br><br>
+                2014 год за всю историю нового тысячелетия стал рекордным на продажи виниловых пластинок.
+                По всему миру было продано 8 млн. штук винила.
+                При общем сокращении продаж физических носителей и увеличивающейся
+                доли потоковых сервисов на музыкальном рынке доля пластинок не изменилась
+                и составила 2% от общего дохода индустрии.<br><br>
+                От CD и MP3 винил отличается тем, что запись на пластинке – аналоговая,
+                то есть физическая, представленная непрерывным электрическим сигналом, отображающим изменение звуковой волны,
+                которое соответствует оригинальному звуку.
+                Звуковые дорожки нарезаются в виниле специальным станком в соответствии со звуковой волной оригинала.
+                Оцифрованный звук производится за&nbsp;счет физических свойств исходного звука, разбиваемого на определенные отрезки,
+                в которых фиксируется числовое значение амплитуды в данный момент.
+                То есть компакт-диск делает моментальный снимок аналогового сигнала в определенном темпе (44100 раз в секунду).
+                <br><br>Специалисты уверяют: в оцифрованном звуке разрешение более ограниченное,
+                чем в аналоговом, равно как и частотный диапазон.
+                Пластинка дает определенную насыщенность и дополнительные гармоники, каких нет в цифре.
+                У звука есть плотность, и он получается более материальным.
+                Для тех, кому оцифрованный звук кажется сухим, были придуманы множество эффектов обработки звука,
+                накладывающих шумы и потрескивания пластинок на качественную цифровую запись.
+                Но от этого оцифрованный звук не стал ни лучше, ни хуже,
+                а только, как электрический камин с искусственным пламенем, слегка уютнее.
+                Также в пользу пластинок можно привести тот факт, что винил – наиболее стабильный физический аудиоформат.
+                <br><br>Виниловая запись может храниться десятилетиями, если соблюдать требуемый температурный режим.
+                А вот цифровые файлы они зависят от оборудования, операционной системы и программного обеспечения.
+                Будут ли в будущем использоваться те цифровые форматы, которые применяют сегодня?
+                Спор этот возник с появлением первых CD и не закончится, наверное,
+                до исчезновения последней виниловой пластинки.
+                Пусть каждый выбирает для себя в многообразии звуков то, что приведет его к&nbsp;Музыке.</p>
+            <a id="detail4" href="#art4" onclick='details("par4", "detail4")'>подробнее</a>
+        </div>
+        <div id="art5">
+            <h3>Теория музыки</h3>
+            <p>Как просто выглядит это определение, не правда ли? Так часто бывает в любой науке:
+                как бы удивительны ни были ее результаты, как бы сложно ни выражались ее практические достижения,
+                ее основные принципы при этом до смешного просты. В самом деле, что может быть проще:
+                музыка - это Ваши чувства, выраженные звуками.
+            </p>
+            <p id="par5" style="display: none">На свете найдется немало людей, которые могут глубоко чувствовать
+                и всей душой желали бы поделиться своими чувствами с миром.
+                А&nbsp;среди них - немало таких, кто обнаружил в себе эту способоность и это желание слишком поздно,
+                чтобы поступать в музыкальную школу. Именно для этих людей мы и попытаемся рассказать о тех законах,
+                по которым существует музыка, чтобы помочь избежать ошибок и облегчить самовыражение.
+                Изобразительность звуками (музыкой) подчиняется определенным правилам,
+                которые сложились в результате многовековой народной и академической музыкальной практики.
+                Учение об элементах музыки и их свойствах изложено в музыкально-теоретических дисциплинах;
+                начальной из них является элементарная теория музыки.<br>
+                Вам не следует забывать, что, несмотря на разделение материала по темам или параграфам,
+                изучаемые элементы музыкальной теории существуют в музыке совместно, взаимодействуют между собой,
+                и зачастую, свойства какого-либо элемента могут проявиться на практике
+                только в сочетании со свойствами других элементов. Поэтому не отчаивайтесь,
+                если при попытке реализовать только что прочитанный параграф в собственных звуках,
+                ожидаемого результата не слышно. Мастерство придет к Вам постепенно,
+                вместе с умением сознательно анализировать, вместе с накоплением разнородных сведений.
+                <br>Кроме основной задачи - приведения музыкально-теоретических сведений читателя в логическую систему,
+                курс элементарной теории музыки преследует цель содействовать Вашим творческим целям,
+                помогая сознательнее воспринимать музыкальный текст, прививая привычку анализировать слышимое.
+                Элементарные знания и навыки при знакомстве с новым музыкальным произведением
+                (со&nbsp;стороны&nbsp;строения мелодии, ритма, гармонии и формообразования)
+                внесут в Вашу работу большее разнообразие и помогут правильно раскрыть содержание музыкального произведения.
+                <br>Для того чтобы изучение курса элементарной теории музыки принесло Вам практическую пользу,
+                недостаточно общего, беглого&nbsp;ознакомления с его основными положениями,
+                для этого необходимо сравнительное, терпеливое и неторопливое изучение предмета.
+                Вам значительно помогут регулярные упражнения, которые мы будем прилагать к тексту по каждой теме.</p>
+            <a id="detail5" href="#art5" onclick='details("par5", "detail5")'>подробнее</a>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+                <li><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+                <li><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+                <li><a href="About.html" title="переход на страницу О сайте">О&nbsp;сайте</a></li>
+                <li><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" title="переход на страницу Google">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVRYR83XS6hPURTH8c+dmHuUiEjeMUGICRPJa0aJ8n5MDSQm7h0wMDTxClEkGXkkBjITMhHydsuNDDBgTot9de7fOf99zs2916p//8de+7e+/7X3WnufDr+tE5swMX0f6LdunIu4HSn4wYGOWKHfFQDvMW6IAHoC4McQBf8VtinAZ1zDdbzEB3xPGRyPuViAtXX/VF2ACHQKJ/CxhvgS7MGanG8dgKdYh2c5sZLx49jVbl4O4C6W9iNw75TZuIzpVRrtANoFH4EpmIrRiCy9wutCoMW4lKuwdgDz8KiEPJpWVd+4nfrKSJzH8Fz2qgBOVqxd7P6VGdFPKfCwXPB2ZbgQ91sEtqdKqKNb26csA08Qm6doAXSvtmoDxzKArrSORZkz2NJAt7ZrGUDUbeyBosUOn1yh2qRMF+FQUacMYHVqtb1+k/CmzV8KgCjZOrYZZ5sCTECc31XWBGAZbuUAypYg2vCMNkvwTzNQtgljT+yoAAj/KjuKL4XB/Ticy0B0v+iCRVuOm3UWueBzARtb5lzE+hxAjMeZ/qBl8jHsbgAR0H3WGy/S+fFHpmkrjvvAzhoQ+3CkxW9Vusz0+bk/h9FWnK6AiMNoLx6XjF9FlHhtgDhiZ1UEGoVp6RWfn6f0RorLrPIEzV1IHmJ+jZS3c1mBG1UOOYCYFzW+DW/7AfJX52uyBEXfppfSmTiADTnoOhkoanzFHVxJ17AA+4axGJPKd066tMS1LWtNAbKCTR0C4N0gPpS28nX/Fw+nQRV1Gjt9sB5Se1Iz6/wJtwiAyQ6nfakAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAFBlWElmTU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAAC+W0ztAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAABA0lEQVRYCe1X2w3CMAwszAESO8AqME/W4BMxCD+MwD+VYA+4a1GbWjZKo7RBKJacxo7ruzgPtVXVisPjDn3NpMRy0EYc2rmAJY5bAPwBXUFzyJMEyCqbLLMhf4D/jsAZEztA11Aur68wdZE7M9be6+k7r5U3yRHcdjB2ZzICRxtzMKISSLEJrwOY9oa7wCcBRVhvysCx9qZP1fRuaINzpLiImMMXggdLiiUIBtMCYwj4Z1vOnhhynPZOA6cvhoCV65vfPKaFANdn1K5V6iz3wah8cy2Bwrt1FQKlAqUCpQI/UYHavKamH6hZgdP0OCZCh+0Qwp/U4G85LxbdgYTkIJbjW2/ir8frTUfwBAAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Twitter">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACR0lEQVRYR+3Xy+tNURQH8M/vL2BGiYliQBIDj5RXFHmXYiQGihgoj5RCyXNIHkVehSQKKRkwII9k4FHCAEUUAyNKSktn/zquc3/n8bt1J1btut291nd991prr71Ojy5LT5f9+0+g0xHYgZEYh8G4j6c4jLct6Z6Gh3kCu7CtHzXxABPa2H/BJtzFDMzBK2xJBFbjGI5iTQMS7zG0hl1EZS4+JAInsCoD2B/MaoAdwMYa+jdwEgvxNRG4jchJknPYi2clwMPxpobz5xid6b+I30URSHjfMhJBpJ0sxuUaBJJq5D+KtbcPpBoowoooRERiRa7zElW/vSaBO5iebPK34DHG9wEWEQkST7Kwv8YYRE7ryC3MLiKwDOfrIDXUvYDlrQQu4jhG4GBD4Kpmh7C+lUBcu1RsP/Gp5r2u6jz0diJq54+kGoic3KyD0g/dKbhXVANXMb8fwFVMP2JIXjF/C+bhLAZWQWqocwYr2hGI/6MI92FRQwdlZhHh630RmIlHmIpoTp1MyTUsaGXYOg9Ee3xZdoyG+/+cPn8L8phN2msZp1NYWaTUbiLqJImYhKL3t05Ef/WBInJLsQGTyo5Xsh8njwgUSpWZMCadzVjXgMjWXIdtRCCchvM641ZytBZHykgXRWAsJmIJZpUBFOzHvLcH8eqVShA4jWH4jskYUGpVrPAO8dLF+lEVIx+B3RhV1CxKwKLBxEN2CZ+rOk56RSmIqSg+LCIVsQZl61c2ksVYFitGtSvZ013Xb69+lVvQGLyKYdcJ/AYwmmG6+ja9sQAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Wikipedia">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClklEQVRYR+3WTeiVVRAG8J+Bi4ioSBAUKcJIopKoRHKRYIq7aKFgZaVQ0aqiRBSzFJXAbxeVhZUklgUtXBhGXwsLAqXMPsASLLDQqKBFSpDFA3Pj8vLe+7/+CXRxZ3XemXNm5j7nmefcMc6zjTnP9Q0bGCJwwSBwPb6uiTiB73AtJpbvOmzHTBzHyYqPxSGswguYhG8q9jcexC14FPlO7tS6BDekZhOBHHgO46vwp5iFM/V9Oz7pGt2b8UXX90fV5GaswW9dsX9qfT9e7/jbruBe7KoN+WXPNrQi38+UbxFe64q/hSur6abEfFXI3t0d6MWBHViMI7ipRawOFrSB/9aKT8cB3IbPG2emFlKJ5ex/1quBwP5+7cr6w0bCh4sTcT+Cl/AmjmJlS8Mbik8LmrF+U/AeZmMv7mpJmmIhalB4Cu/gavzR2Bs+Bcnwa9+5NJADr9aBFPq+DwofYw9ebGl0Keb04EXftyAj9iWmYAueaEn+Oy7Hj7iqJR5XyLceO9viIwnR01iNjFBm93QjyXKsLV8046dGPCg+iZDw7GgauKZQSPHHsbXPSG7DY414dCH3HgRabSQEcigMfwjHMLkryxUlNBGVheWfgJ9rfSd248ZSzlE3cAdCsth8vF3rKF3uf1M1F3euqyNSEaUfsKTXr49/EASy713MLW3IaIaY32Icfq0JSHN/1SheVm9C7j4j2NMGbeC+Lv2egQfwC1ZU5jwsnUKR6jQQSc6+vjZoAxfhcL1gGad5uLTB7HAhjZ7CxYjmf/B/NZA8y7CuEkb5NjaST8Nn5dtfVzZS/YE5kEQRmqDwJ8L2Nus8YvfgjRGrnwMJO7mer9fslR7J8zK+jPxPGMgG5cBAyUazadjAEIEhAv8CtJJ7ISsWy/sAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <br>&COPY; 2020 Music Magic
+    </div>
+</div>
+</body>
+</html>

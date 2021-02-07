@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABZ0lEQVRYR+2XvUoDQRSFvzRa29gJIlr4X2ilva3YWFupD2GZlzBN+jSpbCwsBLVR/AEVVPQBfAIr5YRZGJaJztydFZQNLNliNue759zcmW3xO58RYBFYA9bd94SkWzXpTznBVU90NKSVA2DMiS15VS7EFmYBkJWFmO5V5XisYHmdBeDTKpYrggbgzzpwAZx416CQuprw1gmdAdfAa6ABswE8AZfAjXe9R/xTKgPse4IfEYLlJZUBLPH5EA1A48D/dkAnn01gFlhxrX8FPAJHwClQiwNzQBvY+mEuHAMbVUdxeQ5IvAfMpwwlyzApdsPys11gJ0U85EB0doGN7A2YtAIkZxcAeAamEwFeZKMpuwDAIbCbCNARgCm7AEBqIffAtgBM2Q05zMRG2QcOgAcBmLIDZr6xW82sWaD3h2W3TqekO0Di58WzAjBlB+wl5h1cbmnCQXayLxeAfic5uxziwwZRVHa5AL4AocFdqLtUBu0AAAAASUVORK5CYII=" />
+</head>
+<link rel="stylesheet" href="Style/styleGeneric.css" type="text/css">
+<link rel="stylesheet" href="Style/styleContacts.css" type="text/css">
+<body>
+<div class="Super">
+    <div class="Logo"><img src="Images/logo.png" alt="picture" title="logo picture"></div>
+    <div class="Header">
+        <ul>
+            <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+            <li><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+            <li><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+            <li><a href="About.html" title="переход на страницу О сайте">О сайте</a></li>
+            <li class="Active"><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+        </ul>
+    </div>
+    <script src="JS/scriptBurger.js"></script>
+    <div class="Burger" id="burgerId">
+        <a onclick="down()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAARUlEQVRYR+3U0QkAIAgFQN1/6IL6aQIVOhd4cujLaJ5szg8LEHgFVvFBnmwLEBglUPwEN25UEekBAgT0gBsgQEAP/CmwAdmEEiEL49BKAAAAAElFTkSuQmCC" alt="Открытие меню" title="Открытие меню"></a>
+        <table id="dropdown" style="display: none">
+            <tr><td><a href="index.html" title="переход на Гавную страницу">Главная</a></td></tr>
+            <tr><td><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></td></tr>
+            <tr><td><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></td></tr>
+            <tr><td><a href="About.html" title="переход на страницу О сайте">О сайте</a></td></tr>
+            <tr><td><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></td></tr>
+        </table>
+    </div>
+    <script src="JS/scriptContacts.js"></script>
+    <div id="reply1"></div>
+    <div id="reply2"></div>
+    <div id="reply3"></div>
+    <div class="Contacts">
+        <h3>Свяжитесь с нами</h3>
+        Мы с удовольствием примем ваши пожелания по улучшению контента.<br>
+        Для этого Вам нужно заполнить форму ниже.<br>
+        Ваше мнение важно для нас.<br>
+        <form id="myForm">
+            <fieldset id="f1" name="fields">
+                <legend>Форма обратной связи</legend>
+                <label>
+                    Имя:<br>
+                    <input type=text id="name1" name="fName" placeholder="Введите Ваше имя:*"><br>
+                </label>
+                <label>
+                    Email:<br>
+                    <input type=text id="email" name="email" placeholder="Введите Ваш Email:*"><br>
+                </label>
+                <label>
+                    Сообщение:<br>
+                    <textarea id="mes1" name="myText" rows="7" placeholder="Введите сообщение:*"></textarea><br>
+                </label>
+                <input type="button" value="Отправить" onclick="sayHello()">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="Footer">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+                <li><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+                <li><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+                <li><a href="About.html" title="переход на страницу О сайте">О&nbsp;сайте</a></li>
+                <li><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" title="переход на страницу Google">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVRYR83XS6hPURTH8c+dmHuUiEjeMUGICRPJa0aJ8n5MDSQm7h0wMDTxClEkGXkkBjITMhHydsuNDDBgTot9de7fOf99zs2916p//8de+7e+/7X3WnufDr+tE5swMX0f6LdunIu4HSn4wYGOWKHfFQDvMW6IAHoC4McQBf8VtinAZ1zDdbzEB3xPGRyPuViAtXX/VF2ACHQKJ/CxhvgS7MGanG8dgKdYh2c5sZLx49jVbl4O4C6W9iNw75TZuIzpVRrtANoFH4EpmIrRiCy9wutCoMW4lKuwdgDz8KiEPJpWVd+4nfrKSJzH8Fz2qgBOVqxd7P6VGdFPKfCwXPB2ZbgQ91sEtqdKqKNb26csA08Qm6doAXSvtmoDxzKArrSORZkz2NJAt7ZrGUDUbeyBosUOn1yh2qRMF+FQUacMYHVqtb1+k/CmzV8KgCjZOrYZZ5sCTECc31XWBGAZbuUAypYg2vCMNkvwTzNQtgljT+yoAAj/KjuKL4XB/Ticy0B0v+iCRVuOm3UWueBzARtb5lzE+hxAjMeZ/qBl8jHsbgAR0H3WGy/S+fFHpmkrjvvAzhoQ+3CkxW9Vusz0+bk/h9FWnK6AiMNoLx6XjF9FlHhtgDhiZ1UEGoVp6RWfn6f0RorLrPIEzV1IHmJ+jZS3c1mBG1UOOYCYFzW+DW/7AfJX52uyBEXfppfSmTiADTnoOhkoanzFHVxJ17AA+4axGJPKd066tMS1LWtNAbKCTR0C4N0gPpS28nX/Fw+nQRV1Gjt9sB5Se1Iz6/wJtwiAyQ6nfakAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAFBlWElmTU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAAC+W0ztAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAABA0lEQVRYCe1X2w3CMAwszAESO8AqME/W4BMxCD+MwD+VYA+4a1GbWjZKo7RBKJacxo7ruzgPtVXVisPjDn3NpMRy0EYc2rmAJY5bAPwBXUFzyJMEyCqbLLMhf4D/jsAZEztA11Aur68wdZE7M9be6+k7r5U3yRHcdjB2ZzICRxtzMKISSLEJrwOY9oa7wCcBRVhvysCx9qZP1fRuaINzpLiImMMXggdLiiUIBtMCYwj4Z1vOnhhynPZOA6cvhoCV65vfPKaFANdn1K5V6iz3wah8cy2Bwrt1FQKlAqUCpQI/UYHavKamH6hZgdP0OCZCh+0Qwp/U4G85LxbdgYTkIJbjW2/ir8frTUfwBAAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Twitter">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACR0lEQVRYR+3Xy+tNURQH8M/vL2BGiYliQBIDj5RXFHmXYiQGihgoj5RCyXNIHkVehSQKKRkwII9k4FHCAEUUAyNKSktn/zquc3/n8bt1J1btut291nd991prr71Ojy5LT5f9+0+g0xHYgZEYh8G4j6c4jLct6Z6Gh3kCu7CtHzXxABPa2H/BJtzFDMzBK2xJBFbjGI5iTQMS7zG0hl1EZS4+JAInsCoD2B/MaoAdwMYa+jdwEgvxNRG4jchJknPYi2clwMPxpobz5xid6b+I30URSHjfMhJBpJ0sxuUaBJJq5D+KtbcPpBoowoooRERiRa7zElW/vSaBO5iebPK34DHG9wEWEQkST7Kwv8YYRE7ryC3MLiKwDOfrIDXUvYDlrQQu4jhG4GBD4Kpmh7C+lUBcu1RsP/Gp5r2u6jz0diJq54+kGoic3KyD0g/dKbhXVANXMb8fwFVMP2JIXjF/C+bhLAZWQWqocwYr2hGI/6MI92FRQwdlZhHh630RmIlHmIpoTp1MyTUsaGXYOg9Ee3xZdoyG+/+cPn8L8phN2msZp1NYWaTUbiLqJImYhKL3t05Ef/WBInJLsQGTyo5Xsh8njwgUSpWZMCadzVjXgMjWXIdtRCCchvM641ZytBZHykgXRWAsJmIJZpUBFOzHvLcH8eqVShA4jWH4jskYUGpVrPAO8dLF+lEVIx+B3RhV1CxKwKLBxEN2CZ+rOk56RSmIqSg+LCIVsQZl61c2ksVYFitGtSvZ013Xb69+lVvQGLyKYdcJ/AYwmmG6+ja9sQAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Wikipedia">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClklEQVRYR+3WTeiVVRAG8J+Bi4ioSBAUKcJIopKoRHKRYIq7aKFgZaVQ0aqiRBSzFJXAbxeVhZUklgUtXBhGXwsLAqXMPsASLLDQqKBFSpDFA3Pj8vLe+7/+CXRxZ3XemXNm5j7nmefcMc6zjTnP9Q0bGCJwwSBwPb6uiTiB73AtJpbvOmzHTBzHyYqPxSGswguYhG8q9jcexC14FPlO7tS6BDekZhOBHHgO46vwp5iFM/V9Oz7pGt2b8UXX90fV5GaswW9dsX9qfT9e7/jbruBe7KoN+WXPNrQi38+UbxFe64q/hSur6abEfFXI3t0d6MWBHViMI7ipRawOFrSB/9aKT8cB3IbPG2emFlKJ5ex/1quBwP5+7cr6w0bCh4sTcT+Cl/AmjmJlS8Mbik8LmrF+U/AeZmMv7mpJmmIhalB4Cu/gavzR2Bs+Bcnwa9+5NJADr9aBFPq+DwofYw9ebGl0Keb04EXftyAj9iWmYAueaEn+Oy7Hj7iqJR5XyLceO9viIwnR01iNjFBm93QjyXKsLV8046dGPCg+iZDw7GgauKZQSPHHsbXPSG7DY414dCH3HgRabSQEcigMfwjHMLkryxUlNBGVheWfgJ9rfSd248ZSzlE3cAdCsth8vF3rKF3uf1M1F3euqyNSEaUfsKTXr49/EASy713MLW3IaIaY32Icfq0JSHN/1SheVm9C7j4j2NMGbeC+Lv2egQfwC1ZU5jwsnUKR6jQQSc6+vjZoAxfhcL1gGad5uLTB7HAhjZ7CxYjmf/B/NZA8y7CuEkb5NjaST8Nn5dtfVzZS/YE5kEQRmqDwJ8L2Nus8YvfgjRGrnwMJO7mer9fslR7J8zK+jPxPGMgG5cBAyUazadjAEIEhAv8CtJJ7ISsWy/sAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <br>&COPY; 2020 Music Magic
+    </div>
+</div>
+</body>
+</html>

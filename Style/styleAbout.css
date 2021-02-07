@@ -1,0 +1,27 @@
+iframe { border-color: gray }
+.VideoView {
+    flex-basis: auto;
+    margin: 7px
+}
+.About { flex-basis: auto;
+    margin: 50px 75px 50px 75px;
+    font: normal 20px Arial, serif;
+    line-height: 50px;
+}
+.MainAbout {
+    display: flex;
+}
+@media only screen and (min-width: 960px) {
+    .MainAbout { flex-direction: row }
+}
+@media only screen and (max-width: 960px) {
+    .MainAbout { flex-direction: column }
+    div.About { order: 1 }
+    div.VideoView {order: 2}
+}
+@media only screen and (max-width: 700px) {
+    .Super iframe { width: 98%; margin: auto }
+    .MainAbout { flex-direction: column }
+    div.About { order: 1 }
+    div.VideoView {order: 2}
+}

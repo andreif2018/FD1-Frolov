@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инструменты</title>
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABZ0lEQVRYR+2XvUoDQRSFvzRa29gJIlr4X2ilva3YWFupD2GZlzBN+jSpbCwsBLVR/AEVVPQBfAIr5YRZGJaJztydFZQNLNliNue759zcmW3xO58RYBFYA9bd94SkWzXpTznBVU90NKSVA2DMiS15VS7EFmYBkJWFmO5V5XisYHmdBeDTKpYrggbgzzpwAZx416CQuprw1gmdAdfAa6ABswE8AZfAjXe9R/xTKgPse4IfEYLlJZUBLPH5EA1A48D/dkAnn01gFlhxrX8FPAJHwClQiwNzQBvY+mEuHAMbVUdxeQ5IvAfMpwwlyzApdsPys11gJ0U85EB0doGN7A2YtAIkZxcAeAamEwFeZKMpuwDAIbCbCNARgCm7AEBqIffAtgBM2Q05zMRG2QcOgAcBmLIDZr6xW82sWaD3h2W3TqekO0Di58WzAjBlB+wl5h1cbmnCQXayLxeAfic5uxziwwZRVHa5AL4AocFdqLtUBu0AAAAASUVORK5CYII=" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="Style/styleGeneric.css" type="text/css">
+<link rel="stylesheet" href="Style/styleInstruments.css" type="text/css">
+<body>
+<div class="Super">
+    <div class="Logo"><img src="Images/logo.png" alt="picture" title="logo picture"></div>
+    <div class="Header">
+        <ul>
+            <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+            <li><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+            <li class="Active"><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+            <li><a href="About.html" title="переход на страницу О сайте">О сайте</a></li>
+            <li><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+        </ul>
+    </div>
+    <script src="JS/scriptBurger.js"></script>
+    <div class="Burger" id="burgerId">
+        <a onclick="down()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAARUlEQVRYR+3U0QkAIAgFQN1/6IL6aQIVOhd4cujLaJ5szg8LEHgFVvFBnmwLEBglUPwEN25UEekBAgT0gBsgQEAP/CmwAdmEEiEL49BKAAAAAElFTkSuQmCC" alt="Открытие меню" title="Открытие меню"></a>
+        <table id="dropdown" style="display: none">
+            <tr><td><a href="index.html" title="переход на Гавную страницу">Главная</a></td></tr>
+            <tr><td><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></td></tr>
+            <tr><td><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></td></tr>
+            <tr><td><a href="About.html" title="переход на страницу О сайте">О сайте</a></td></tr>
+            <tr><td><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></td></tr>
+        </table>
+    </div>
+    <script src="JS/scriptInstruments.js"></script>
+    <div class="Instrument" id="instrMain">
+
+        <div class="Dropdown" id="#dropD">
+            <h5>Музыкальный инструмент:</h5>
+            <button id="dropDownBtn" class="DropDownButton">Гитара</button>
+            <div id="dropDownContent" class="Dropdown-content">
+                <a href="#" id="guitar" onclick="setInstrument('guitar')">Гитара</a>
+                <a href="#" id="saxophone" onclick="setInstrument('saxophone')">Саксофон</a>
+                <a href="#" id="violin" onclick="setInstrument('violin')">Скрипка</a>
+                <a href="#" id="percussion" onclick="setInstrument('percussion')">Ударные инструменты</a>
+                <a href="#" id="piano" onclick="setInstrument('piano')">Клавишные инструменты</a>
+            </div>
+        </div>
+        <div class="ComboBox">
+            <label for="comb">Музыкальный инструмент:</label>
+            <select name="list" id="comb" onchange="setInstrumentMini()">
+                <option id="g1" value="guitar">Гитара</option>
+                <option id="s1" value="saxophone">Саксофон</option>
+                <option id="v1" value="violin">Скрипка</option>
+                <option id="p1" value="percussion">Ударные инструменты</option>
+                <option id="p2" value="piano">Клавишные инструменты</option>
+            </select>
+        </div>
+        <div id="inst1">
+            <img class="wikiPict" src="Images/guitar3.jpg" alt="picture" title="wiki picture">
+            <img class="miniPict" src="Images/guitar3.jpg" alt="picture" title="mini wiki picture">
+            <h3>Гитара</h3>
+            Струнный&nbsp;щипковый музыкальный&nbsp;инструмент.
+            Применяется в качестве аккомпанирующего или сольного инструмента во многих стилях и направлениях музыки,
+            среди которых романс, блюз, кантри, фламенко, рок, джаз.
+            Изобретённая в XX веке электрическая гитара произвела значительные изменения в&nbsp;музыке
+            и тем самым оказала сильное влияние на массовую культуру.
+            Также есть классическая гитара, гитара фламенко, испанская гитара и некоторые другие виды.<br>
+            Источником звука в гитаре являются колебания натянутых струн.<br><br>
+            Лады<br>
+            Высота извлекаемого звука определяется силой натяжения струны,
+            длиной колеблющейся части и толщиной самой струны.<br>
+            Зависимость здесь такая: чем тоньше струна, чем короче и чем сильнее натянута &ndash; тем выше она звучит.
+            Математическое описание этой зависимости получено в 1626 году Мареном Мерсенном и носит название &laquo;закон Мерсенна&raquo;.
+            Основной способ управления высотой звука при игре на гитаре &ndash; это изменение длины колеблющейся части струны.
+            Гитарист прижимает струну к грифу, вызывая сокращение рабочей части струны и
+            повышение издаваемого струной тона
+            (рабочей частью струны в данном случае будет часть струны от
+            нижнего порожка до порожка того лада, на котором находится палец гитариста).
+            Сокращение длины струны вдвое вызывает повышение тона на октаву.<br>
+            В современной западной музыке используется равномерно темперированный 12-нотный звукоряд.
+            Для облегчения игры в таком звукоряде в гитаре используются так называемые &laquo;лады&raquo;.
+            Лад &ndash; это отрезок грифа с длиной, вызывающей повышение звука струны на один полутон.
+            На границе ладов в грифе укрепляются металлические ладовые порожки.
+            При наличии ладовых порожков изменение длины струны и, соответственно,
+            высоты звука становится возможным только дискретным образом.<br><br>
+            Струны<br>
+            В современных гитарах используются стальные, нейлоновые или карбоновые струны.
+            Струны обозначаются номерами в порядке увеличения толщины струны (и понижения тона),
+            самая тонкая струна имеет номер 1.<br>
+            В гитаре используется комплект струн &ndash; набор струн разной толщины,
+            подобранных таким образом, чтобы при одинаковом натяжении каждая струна давала звук определённой высоты.
+            Струны устанавливаются на гитару в порядке толщины &ndash; толстые струны,
+            дающие более низкий звук  &ndash; слева, тонкие &ndash; справа (см. рисунок выше).
+            Для гитаристов-левшей порядок струн может меняться на обратный.
+            В настоящее время производится большое количество разновидностей комплектов струн,
+            различающихся по толщине, технологии изготовления, материалу,
+            тембру звука, типу гитар и области применения.<br>
+            <a href="#instrMain">в начало страницы</a>
+        </div>
+
+        <div id="inst2">
+            <img class="wikiPict" src="Images/saxophone2.jpg" alt="picture" title="wiki picture">
+            <img class="miniPict" src="Images/saxophone2.jpg" alt="picture" title="mini wiki picture">
+            <h3>Саксофон</h3>
+            тростевой духовой музыкальный инструмент,
+            по принципу звукоизвлечения принадлежащий к семейству язычковых деревянных духовых музыкальных инструментов.
+            Семейство саксофонов сконструировано в 1842 году бельгийским музыкальным мастером Адольфом Саксом
+            и запатентовано им четыре года спустя. С середины XIX века саксофон используется в духовом оркестре,
+            реже &ndash; в симфоническом, также в качестве солирующего инструмента в сопровождении оркестра (ансамбля).
+            Является одним из основных инструментов джаза и родственных ему жанров, а также эстрадной музыки.
+            Инструмент обладает полным и мощным звучанием, певучим тембром и большой технической подвижностью.<br><br>
+            Классическая музыка<br>
+            Изобретение саксофона относится к началу 1840-х годов.
+            В это время Сакс, работавший в музыкальной мастерской своего отца
+            в Динане и уже получивший несколько патентов, искал возможности устранить интонационные расхождения между
+            деревянными и медными инструментами духовых оркестров,
+            заполнить тембровое пространство между ними и заменить громоздкие и несовершенные басовые офиклеиды.
+            Именно под названием &laquo;мундштучный офиклеид&raquo; новый инструмент был впервые представлен
+            на Брюссельской промышленной выставке в августе 1841 года.<br>
+            Этот инструмент обладал металлическим коническим корпусом,
+            мундштуком с одинарной тростью (почти без изменения заимствованным у кларнета),
+            системой кольцевых клапанов Теобальда Бёма, но при этом имел &laquo;змееобразную&raquo; (скрученную) форму.<br><br>
+            Техника игры на саксофоне<br>
+            Аппликатура саксофона близка аппликатуре флейты, а принцип извлечения звука сходен со звукоизвлечением на кларнете,
+            но немного легче сделать амбушюр. При этом регистры саксофона более однородны, чем регистры кларнета.
+            Возможности саксофона очень широки: по технической подвижности, особенно в легато,
+            он конкурирует с кларнетом, возможна большая амплитуда вибрации звука, чёткое акцентированное стаккато,
+            глиссандированные переходы с одного звука на другой. К тому же саксофон обладает значительно большей,
+            чем у других деревянных духовых, силой звука (примерно как у валторны).
+            Способность саксофона (впрочем, как и валторны) органически сливаться как с группой деревянных,
+            так и медных духовых помогает ему успешно объединять эти группы по тембру.
+            В джазе и при исполнении современной музыки саксофонисты используют самые разнообразные приёмы игры
+            &ndash;  фруллато (тремоло на одной ноте с помощью языка),
+            резонансное звучание, исполнение в сверхвысоком регистре с флажолетными звучаниями,
+            многоголосное звучание и др.<br>
+            <a href="#instrMain">в начало страницы</a>
+        </div>
+
+        <div id="inst3">
+            <img class="wikiPict" src="Images/violin.jpg" alt="picture" title="wiki picture">
+            <img class="miniPict" src="Images/violin.jpg" alt="picture" title="mini wiki picture">
+            <h3>Скрипка</h3>
+            Скрипка (от ст.‑слав. скрыпати &ndash; &laquo;скрипеть&raquo;, итал. violino) &ndash;
+            струнный смычковый музыкальный инструмент высокого регистра.
+            Имеет народное происхождение, современный вид приобрела в XVI веке, получила широкое распространение в XVII веке.
+            Имеет четыре струны, настроенные по квинтам: g, d1,a1,e2
+            (&laquo;соль&raquo; малой октавы, &laquo;ре&raquo;, &laquo;ля&raquo; первой октавы, &laquo;ми&raquo; второй октавы),
+            диапазон от g (&laquo;соль&raquo; малой октавы) до a4 (&laquo;ля&raquo; четвёртой октавы) и выше.
+            Тембр скрипки густой в низком регистре, мягкий в среднем и блестящий в верхнем.
+            Бывают также и пятиструнные скрипки, с добавлением нижней альтовой струны c (&laquo;до&raquo; малой октавы).
+            Принадлежит музыкальный инструмент многим народам, в том числе и русским.<br><br>
+            Конструкция<br>
+            Скрипка состоит из двух основных частей: корпуса и грифа, вдоль которого натянуты струны.
+            Размер полной скрипки составляет 60 см, вес &ndash; 300&ndash;400 граммов, хотя бывают и скрипки меньших размеров.
+            Идеальная реакция скрипки, как и других смычковых, на щипок &ndash; громкий и короткий звук,
+            иначе звук от изменчивых движений смычка будет усреднен во времени. Это реализуется непростой,
+            но физически правильной, геометрией корпуса: выпуклые деки, эфы и другое.<br><br>
+            История скрипки<br>
+            Предшественниками скрипки были арабский ребаб, испанская фидель, британская кротта, слияние которых и образовало виолу.
+            Отсюда итальянское название скрипки violino, а также славянский четырёхструнный инструмент квинтового строя жига
+            (отсюда немецкое название скрипки &ndash; geige).
+            Продолжавшаяся в течение нескольких веков борьба между аристократической виолой и народной скрипкой окончилась победой последней.
+            В качестве народного инструмента скрипка особенно широкое распространение получила
+            в Белоруссии, Польше, Украине, Румынии, Истрии и Далмации. Со второй половины XIX века получает распространение среди татар.
+            С XX века встречается в музыкальном быту башкир.<br>
+            В середине XVI века на севере Италии сложилась современная конструкция скрипки.
+            Право считаться изобретателем &laquo;аристократической&raquo; скрипки современного типа оспаривают Гаспаро да Сало
+            из города Бреши и Андреа Амати[en] &ndash; основатель кремонской школы.<br>
+            Производством скрипок занимаются скрипичные мастера.
+            Прекрасной формой и превосходным материалом отличаются кремонские скрипки Амати, сохранившиеся с XVII века.
+            Ломбардия славилась производством скрипок и в XVIII веке;
+            чрезвычайно высоко ценятся скрипки производства Страдивари (1644&ndash;1737), Андреа (1626&ndash;1698) и Джузеппе (1698&ndash;1744) Гварнери.
+            Скрипка является сольным инструментом с XVII века.
+            Основателем художественной игры на скрипке считается Арканджело Корелли;
+            затем следуют Торелли и Тартини, а также Локателли (ученик Корелли, развивший бравурную технику скрипичной игры),
+            его ученица Магдалена Лаура Сирмен (Ломбардини),
+            Никола Маттейс, создавший скрипичную школу в Великобритании, Джованни Антонио Пьяни.<br>
+            <a href="#instrMain">в начало страницы</a>
+        </div>
+
+        <div id="inst4">
+            <img class="wikiPict" src="Images/percussion.jpg" alt="picture" title="wiki picture">
+            <img class="miniPict" src="Images/percussion.jpg" alt="picture" title="mini wiki picture">
+            <h3>Ударные инструменты</h3>
+            группа музыкальных инструментов, звук из которых извлекается ударом или тряской (покачиванием)
+            [молоточков, колотушек, палочек и тому подобного] по звучащему телу (мембране, металлу, дереву и другому).
+            Самое многочисленное семейство среди всех музыкальных инструментов.<br><br>
+            Классификация ударных инструментов<br>
+            Многообразие разновидностей и форм ударных музыкальных инструментов сформировало несколько вариантов их классификации.
+            Один и тот же инструмент может принадлежать к нескольким группам.<br><br>
+            По звуковысотности ударные инструменты делятся на:
+            <dl>
+                <dt>Ударные инструменты с определённой высотой звучания, которые могут
+                    быть настроены на определённые ноты звукоряда.</dt>
+                <dd>К таким инструментам относятся литавры, ксилофон, вибрафон, колокольчики и ряд других;</dd>
+                <dt>Ударные инструменты с неопределённой высотой звучания, которые не имеют настройки на определённые звуки.</dt>
+                <dd>Среди этих инструментов &ndash; большой и малый барабаны, треугольник, тарелки, бубен, кастаньеты,
+                    там-там и другие инструменты.</dd>
+            </dl>
+            По звукообразованию ударные инструменты делятся на:
+            <dl>
+                <dt>Мембранофоны</dt>
+                <dd>инструменты, в которых звучащим телом является натянутая мембрана из кожи или пластика.
+                    К ним относятся литавры, барабаны, бубен, бонго, дхол, дабыл, том-томы и др.</dd>
+                <dt>Идиофоны</dt>
+                <dd>инструменты, в которых звучащим телом является весь инструмент (гонг),
+                    либо состоящие из целиком звучащих тел (треугольник, ксилофон, маримба, вибрафон, колокольчики, било)</dd>
+            </dl>
+            Идиофоны по материалу дополнительно делятся на:
+            <dl>
+                <dd>Металлические идиофоны, звучащие элементы которых сделаны из металла &ndash;
+                    металлофоны, треугольник, вибрафон, колокольчики;</dd>
+                <dd>Деревянные идиофоны, звучащие элементы которых сделаны из дерева &ndash; ксилофон, коробочка, корейские колокола.
+                    Особую группу ударных инструментов составляют струнные ударные инструменты, в которых звучащим телом являются струны.
+                    К таким инструментам относится фортепиано, а также народные инструменты рода цимбал.</dd>
+            </dl>
+            <a href="#instrMain">в начало страницы</a>
+        </div>
+
+        <div id="inst5">
+            <img class="wikiPict" src="Images/piano.jpg" alt="picture" title="wiki picture">
+            <img class="miniPict" src="Images/piano.jpg" alt="picture" title="mini wiki picture">
+            <h3>Клавишные инструменты</h3>
+            инструменты,&nbsp;управление звукоизвлечением в&nbsp;которых осуществляется при помощи клавиатуры.<br><br>
+            История клавишных инструментов<br>
+            Клавишные инструменты существовали ещё в Средние Века.
+            Орган &ndash; один из древнейших инструментов &ndash; самый старый из них.
+            Клавиши у органа были широкими и нажимали их кулаками, они пришли на смену большим рычагам,
+            введенным в XI веке взамен неудобных ручных задвижек. В начале XVI века широкие клавиши были заменены более удобными 
+            &ndash; узкими, с помощью которых играют и сейчас. Тем самым орган стал клавишным духовым инструментом.<br>
+            Первый струнный клавишный инструмент &ndash; клавикорд.<br>
+            Он появился в позднее Средневековье, хотя никто не знает, когда именно.
+            Клавикорд имел устройство, похожее на устройство современного фортепиано. 
+            Однако его звук был слишком мягким и тихим для того, чтобы на нём можно было играть перед большим количеством слушателей. 
+            Клавикорд, будучи намного меньше по размеру и проще, чем его родственник клавесин,
+            был достаточно популярным инструментом домашнего музицирования, 
+            и его наверняка можно было найти в домах композиторов эпохи барокко, включая Баха.<br><br>
+            Клавикорд являлся одним из самых чутких и отзывчивых клавишных инструментов своей эпохи, 
+            эпохи барокко. При нажатии на клавишу, маленький медный квадратик под названием &laquo;тангент&raquo; ударял струну и, 
+            упираясь в неё, как бы разделял её на две части &ndash; одна из которых являлась звучащей,
+            а другая заглушалась лентой из войлока, протянутой вдоль струн.
+            При отпускании клавиши тангент возвращался в исходное положение, 
+            колебания переходили на всю струну и мгновенно заглушались за счет той её части, 
+            которая была заглушена войлоком. У клавикорда было по одной струне на каждую клавишу, 
+            или по две &ndash; такой клавикорд называется &laquo;связанный&raquo;. Будучи весьма тихим инструментом, 
+            клавикорд все же позволял делать крещендо и диминуэндо.<br><br>
+            Другой клавишный инструмент &ndash; клавесин &ndash; скорее всего был изобретен в Италии в XV веке.
+            Клавесины бывают с одним или двумя (реже с тремя) мануалами, 
+            а звук в них извлекается защипыванием струны плектром из птичьего пера 
+            (наподобие медиатора) при нажатии клавиши. Струны клавесина расположены параллельно клавишам, 
+            как у современного рояля, а не перпендикулярно, как у клавикорда и современного пианино. 
+            Звук концертного клавесина &ndash; довольно резкий, но слишком слабый для исполнения музыки в больших залах,
+            поэтому в пьесы для клавесина композиторы вставляли множество мелизмов (украшений) для того,
+            чтобы длинные ноты могли звучать достаточно протяженно. Клавесин использовался также для аккомпанемента к светским песням,
+            в камерной музыке и для исполнения партии цифрованного баса в оркестре.<br><br>
+            Существуют также музыкальные инструменты, которые являются разновидностью клавесина по сходству с ним в звукоизвлечении,
+            но отличные от него по конструкции: спинет, мюзелар и вёрджинел &ndash; 
+            это небольшие клавесины с одной клавиатурой (реже с двумя) диапазоном в четыре октавы. 
+            Поскольку клавесины предназначались преимущественно для домашнего музицирования, то они, как правило,
+            были искусно декорированы и поэтому могли украшать собой домашнюю обстановку.<br><br>
+            На рубеже XVIII века композиторы и музыканты стали остро ощущать потребность в новом клавишном инструменте, 
+            который не уступал бы по выразительности скрипке. Более того, был необходим инструмент с большим динамическим диапазоном,
+            способным на громовое фортиссимо, нежнейшее пианиссимо и тончайшие динамические переходы.
+            Эти мечты стали реальностью, когда в 1709 году итальянец Бартоломео Кристофори, 
+            занимавшийся конструированием музыкальных инструментов для семейства Медичи, изобрел первое фортепиано.
+            Он назвал своё изобретение &laquo;gravicembalo col piano e forte&raquo;, что означает &laquo;клавишный инструмент,
+            играющий тихо и громко&raquo;. Это название затем было сокращено, и появилось слово &laquo;фортепиано&raquo;. 
+            Несколько позже подобные инструменты были созданы учителем музыки из Германии Кристофором Готлибом Шретером (1717 г.)
+            и французом Жаном Мариусом (1716 г.).<br><br>
+            Устройство звукоизвлечения у фортепиано Кристофори состояло из клавиши, 
+            войлочного молоточка и специального механизма для возвращения молоточка. 
+            У такого фортепиано не было ни демпферов, ни педалей. Удар по клавише заставлял молоток ударять по струне,
+            вызывая её вибрацию, совсем не похожую на вибрацию струн у клавесина или клавикорда. 
+            Возвращатель позволял молоточку идти назад, а не оставаться прижатым к струне,
+            что заглушало бы вибрацию струны. Позднее была изобретена двойная репетиция,
+            позволившая молоточку опускаться наполовину, что очень помогало в исполнении трелей 
+            и быстро повторяющихся нот (в частности, тремоло и других мелизмов).
+            <br>
+            <a href="#instrMain">в начало страницы</a>
+        </div>
+
+    </div>
+
+    <div class="Footer">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="переход на Гавную страницу">Главная</a></li>
+                <li><a href="Articles.html" title="переход на страницу Статьи">Статьи</a></li>
+                <li><a href="Instruments.html" title="переход на страницу Инструменты">Инструменты</a></li>
+                <li><a href="About.html" title="переход на страницу О сайте">О&nbsp;сайте</a></li>
+                <li><a href="Contacts.html" title="переход на страницу Контакты">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" title="переход на страницу Google">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVRYR83XS6hPURTH8c+dmHuUiEjeMUGICRPJa0aJ8n5MDSQm7h0wMDTxClEkGXkkBjITMhHydsuNDDBgTot9de7fOf99zs2916p//8de+7e+/7X3WnufDr+tE5swMX0f6LdunIu4HSn4wYGOWKHfFQDvMW6IAHoC4McQBf8VtinAZ1zDdbzEB3xPGRyPuViAtXX/VF2ACHQKJ/CxhvgS7MGanG8dgKdYh2c5sZLx49jVbl4O4C6W9iNw75TZuIzpVRrtANoFH4EpmIrRiCy9wutCoMW4lKuwdgDz8KiEPJpWVd+4nfrKSJzH8Fz2qgBOVqxd7P6VGdFPKfCwXPB2ZbgQ91sEtqdKqKNb26csA08Qm6doAXSvtmoDxzKArrSORZkz2NJAt7ZrGUDUbeyBosUOn1yh2qRMF+FQUacMYHVqtb1+k/CmzV8KgCjZOrYZZ5sCTECc31XWBGAZbuUAypYg2vCMNkvwTzNQtgljT+yoAAj/KjuKL4XB/Ticy0B0v+iCRVuOm3UWueBzARtb5lzE+hxAjMeZ/qBl8jHsbgAR0H3WGy/S+fFHpmkrjvvAzhoQ+3CkxW9Vusz0+bk/h9FWnK6AiMNoLx6XjF9FlHhtgDhiZ1UEGoVp6RWfn6f0RorLrPIEzV1IHmJ+jZS3c1mBG1UOOYCYFzW+DW/7AfJX52uyBEXfppfSmTiADTnoOhkoanzFHVxJ17AA+4axGJPKd066tMS1LWtNAbKCTR0C4N0gPpS28nX/Fw+nQRV1Gjt9sB5Se1Iz6/wJtwiAyQ6nfakAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Facebook">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAFBlWElmTU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAAC+W0ztAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAABA0lEQVRYCe1X2w3CMAwszAESO8AqME/W4BMxCD+MwD+VYA+4a1GbWjZKo7RBKJacxo7ruzgPtVXVisPjDn3NpMRy0EYc2rmAJY5bAPwBXUFzyJMEyCqbLLMhf4D/jsAZEztA11Aur68wdZE7M9be6+k7r5U3yRHcdjB2ZzICRxtzMKISSLEJrwOY9oa7wCcBRVhvysCx9qZP1fRuaINzpLiImMMXggdLiiUIBtMCYwj4Z1vOnhhynPZOA6cvhoCV65vfPKaFANdn1K5V6iz3wah8cy2Bwrt1FQKlAqUCpQI/UYHavKamH6hZgdP0OCZCh+0Qwp/U4G85LxbdgYTkIJbjW2/ir8frTUfwBAAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Twitter">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACR0lEQVRYR+3Xy+tNURQH8M/vL2BGiYliQBIDj5RXFHmXYiQGihgoj5RCyXNIHkVehSQKKRkwII9k4FHCAEUUAyNKSktn/zquc3/n8bt1J1btut291nd991prr71Ojy5LT5f9+0+g0xHYgZEYh8G4j6c4jLct6Z6Gh3kCu7CtHzXxABPa2H/BJtzFDMzBK2xJBFbjGI5iTQMS7zG0hl1EZS4+JAInsCoD2B/MaoAdwMYa+jdwEgvxNRG4jchJknPYi2clwMPxpobz5xid6b+I30URSHjfMhJBpJ0sxuUaBJJq5D+KtbcPpBoowoooRERiRa7zElW/vSaBO5iebPK34DHG9wEWEQkST7Kwv8YYRE7ryC3MLiKwDOfrIDXUvYDlrQQu4jhG4GBD4Kpmh7C+lUBcu1RsP/Gp5r2u6jz0diJq54+kGoic3KyD0g/dKbhXVANXMb8fwFVMP2JIXjF/C+bhLAZWQWqocwYr2hGI/6MI92FRQwdlZhHh630RmIlHmIpoTp1MyTUsaGXYOg9Ee3xZdoyG+/+cPn8L8phN2msZp1NYWaTUbiLqJImYhKL3t05Ef/WBInJLsQGTyo5Xsh8njwgUSpWZMCadzVjXgMjWXIdtRCCchvM641ZytBZHykgXRWAsJmIJZpUBFOzHvLcH8eqVShA4jWH4jskYUGpVrPAO8dLF+lEVIx+B3RhV1CxKwKLBxEN2CZ+rOk56RSmIqSg+LCIVsQZl61c2ksVYFitGtSvZ013Xb69+lVvQGLyKYdcJ/AYwmmG6+ja9sQAAAABJRU5ErkJggg==" alt="socialLogo" title="socialLogo">
+        </a>
+        <a href="index.html" title="переход на страницу Wikipedia">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClklEQVRYR+3WTeiVVRAG8J+Bi4ioSBAUKcJIopKoRHKRYIq7aKFgZaVQ0aqiRBSzFJXAbxeVhZUklgUtXBhGXwsLAqXMPsASLLDQqKBFSpDFA3Pj8vLe+7/+CXRxZ3XemXNm5j7nmefcMc6zjTnP9Q0bGCJwwSBwPb6uiTiB73AtJpbvOmzHTBzHyYqPxSGswguYhG8q9jcexC14FPlO7tS6BDekZhOBHHgO46vwp5iFM/V9Oz7pGt2b8UXX90fV5GaswW9dsX9qfT9e7/jbruBe7KoN+WXPNrQi38+UbxFe64q/hSur6abEfFXI3t0d6MWBHViMI7ipRawOFrSB/9aKT8cB3IbPG2emFlKJ5ex/1quBwP5+7cr6w0bCh4sTcT+Cl/AmjmJlS8Mbik8LmrF+U/AeZmMv7mpJmmIhalB4Cu/gavzR2Bs+Bcnwa9+5NJADr9aBFPq+DwofYw9ebGl0Keb04EXftyAj9iWmYAueaEn+Oy7Hj7iqJR5XyLceO9viIwnR01iNjFBm93QjyXKsLV8046dGPCg+iZDw7GgauKZQSPHHsbXPSG7DY414dCH3HgRabSQEcigMfwjHMLkryxUlNBGVheWfgJ9rfSd248ZSzlE3cAdCsth8vF3rKF3uf1M1F3euqyNSEaUfsKTXr49/EASy713MLW3IaIaY32Icfq0JSHN/1SheVm9C7j4j2NMGbeC+Lv2egQfwC1ZU5jwsnUKR6jQQSc6+vjZoAxfhcL1gGad5uLTB7HAhjZ7CxYjmf/B/NZA8y7CuEkb5NjaST8Nn5dtfVzZS/YE5kEQRmqDwJ8L2Nus8YvfgjRGrnwMJO7mer9fslR7J8zK+jPxPGMgG5cBAyUazadjAEIEhAv8CtJJ7ISsWy/sAAAAASUVORK5CYII=" alt="socialLogo" title="socialLogo">
+        </a>
+        <br>&COPY; 2020 Music Magic
+    </div>
+</div>
+</body>
+</html>
